@@ -230,7 +230,11 @@ for (let option in options) {
             recommendations.push(`Not a fan of that idea? How about a movie by the amazing ${options[option][itemNum]}.`);
             break;
         case 'genre':
-            recommendations.push(`Alright alright, too cool for that too? How about you just watch a ${options[option][itemNum]} flick.`);
+            if (options[option][itemNum] === 'action' || options[option][itemNum] === 'adventure' || options[option][itemNum] === 'animation') {
+                recommendations.push(`Alright alright, too cool for that too? How about you just watch an ${options[option][itemNum]} flick.`);
+            } else {
+                recommendations.push(`Alright alright, too cool for that too? How about you just watch a ${options[option][itemNum]} flick.`);
+            }
             break;
         default:
             recommendations.push('Missing info.');

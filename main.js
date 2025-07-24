@@ -132,10 +132,11 @@ let recommendations = [];
 
 for (let option in options) {
     let itemNum = genRandNum(options[option].length);
+    let rank = itemNum + 1;
 
     switch(option) {
         case 'movies':
-            recommendations.push(`My recommendation is the movie: ${options[option][itemNum]}.`);
+            recommendations.push(`My recommendation is the #${rank} movie on the list: ${options[option][itemNum]}.`);
             break;
         case 'directors':
             recommendations.push(`Not a fan of that idea? How about a movie by the amazing ${options[option][itemNum]}.`);

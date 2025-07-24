@@ -130,6 +130,29 @@ let options = {
 //Array for final output
 let recommendations = [];
 
-const displayMessage = arr => {
+for (let option in options) {
+    let itemNum = genRandNum(options[option].length);
 
+    switch(option) {
+        case 'movies':
+            recommendations.push(`My recommendation is the movie: ${options[option][itemNum]}.`);
+            break;
+        case 'directors':
+            recommendations.push(`Not a fan of that idea? How about a movie by the amazing ${options[option][itemNum]}.`);
+            break;
+        case 'genre':
+            recommendations.push(`Alright alright, too cool for that too? How about you just watch a ${options[option][itemNum]} flick.`);
+            break;
+        default:
+            recommendations.push('Missing info.');
+            break;
+    }
 }
+
+const displayMessage = arr => {
+    console.log('You want a movie pick from Letterboxd\'s \'Top 250 Narrative Films\' list?');
+    const output = recommendations.join('\n');
+    console.log(output);
+}
+
+displayMessage(recommendations);

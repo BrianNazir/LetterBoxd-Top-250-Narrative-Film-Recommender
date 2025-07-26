@@ -104,7 +104,32 @@ const movies = [
     'Inglourious Bastards',
     'Seven',
     'Good Will Hunting',
-    'Ordet'
+    'Ordet',
+    'A Man Escaped',
+    'Howl\'s Moving Castle',
+    'The Wages of Fear',
+    'Singing in the Rain',
+    'How to Make Millions Before Grandma Dies',
+    'Amadeus',
+    'Three Colours: Red',
+    'The Silence of the Lambs',
+    'Late Spring',
+    'All That Jazz',
+    'City Lights',
+    'Z',
+    'The Seventh Seal',
+    'Still Walking',
+    'Wild Strawberries',
+    'Central Station',
+    'Mirror',
+    'I\m Still Here',
+    'Before Sunset',
+    'Breif Encounter',
+    'The Great Dictator',
+    'Raise the Red Lantern',
+    'The Departed',
+    'To Be or Not to Be',
+    'Monster'
 ]
 
 
@@ -185,7 +210,21 @@ const directors = [
     'Satyajit Ray',
     'Quentin Tarantino',
     'David Fincher',
-    'Gus Van Sant'
+    'Gus Van Sant',
+    'Robert Bresson',
+    'Henry-Georges Clouzot',
+    'Stanley Donen',
+    'Gene Kelly',
+    'Pat Boonnitipat',
+    'Krzysztof Keislowski',
+    'Jonathan Demme',
+    'Bob Fosse',
+    'City Lights',
+    'Costa-Gavras',
+    'Walter Salles',
+    'Richard Linklater',
+    'Zhang Yimou',
+    'Ernst Lubitsch'
 ]
 
 // List of all the genres among the 250 movies
@@ -205,7 +244,8 @@ const genre = [
     'animation',
     'sci-fi',
     'family',
-    'horror'
+    'horror',
+    'music'
 ]
 
 //Letterboxd Top 250 Narrative Films list random options
